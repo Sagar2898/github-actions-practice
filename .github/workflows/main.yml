@@ -1,20 +1,15 @@
-name: My First GitHub Action
+name: Manual Practice
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
-  hello:
+  practice:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Say Hello
-        run: echo "Hello from GitHub Actions!"
+      - name: Step 1
+        run: echo "I started this workflow manually"
 
-      - name: Show Date
-        run: date
-
-      - name: Show Runner
-        run: echo "This job is running on GitHub's runner"
+      - name: Step 2
+        run: echo "I am learning GitHub Actions"
