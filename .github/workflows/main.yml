@@ -22,6 +22,3 @@ jobs:
 
       - name: Step 5
         run: echo "Finished"
-
-        - name: Intentional Failure
-        run: exit 1
